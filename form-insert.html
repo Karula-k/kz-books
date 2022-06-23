@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/elements/fav.png">
+  <!-- Author Meta -->
+  <meta name="author" content="colorlib">
+  <!-- Meta Description -->
+  <meta name="description" content="">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>Books</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+      <header id="header" id="home">
+        <div class="container">
+          <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+              <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+            </div>
+            <nav id="nav-menu-container">
+              <ul class="nav-menu">
+                <li class="menu-active"><a href="#home">Home</a></li>
+                <li><a href="book-list.html">List Buku</a></li>
+                <li><a href="form-insert.html?action=create">Add books</a></li>
+                <li><a href="search.html">Search</a></li>
+              </ul>
+            </nav><!-- #nav-menu-container -->
+          </div>
+        </div>
+      </header><!-- #header -->
+    <!-- Start Sample Area -->
+    <section class="sample-text-area">
+      <div class="container">
+          <div class=" row">
+            <div class="col-lg-10">
+              <h3 class="mb-30">Form Add</h3>
+              <form id="fill-form" method="post" class="justify-content-center" enctype="multipart/form-data" >
+                <input type="hidden" name="title_id" id="title_id" value="">
+                <div class="mt-10">
+                  <input type="text" id="title" name="title" placeholder="Title" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Title'" required class="single-input">
+                </div>
+                <div class="mt-10">
+                  <input id="type" type="text" name="type" placeholder="Type" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type'" required class="single-input">
+                </div>
+                <div class="input-group-icon mt-10">
+                  <div class="icon"><i class="fa fa-money"aria-hidden="true"></i></div>
+                  <input type="number" id="price" name="price" placeholder="Price" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Price'" required class="single-input">
+                </div>
+                <div class="row mb-3">
+                  <label for="publisher" id="publish_place" class="col-sm-2 col-form-label">Publisher</label>
+                  <div class="col-sm-10">
+                    <div class="form-select">
+                      <select class="form-select" name="pub_id" aria-label="Default select example" id="publisher">
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-10">
+                  <textarea id="sinopsis" class="single-textarea" placeholder="Sinopsis" name="sinopsis" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Sinopsis'" required></textarea>
+                </div>
+
+                <div class="mt-10">
+                  <input id="relese" type="date" name="relese_date" placeholder="Relese Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Relese Date'" required class="single-input-primary">
+                </div>
+                <div class="mt-10">
+                  <input type="file" accept="image/*" name="file" placeholder="Relese Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Relese Date'"  class="single-input-primary">
+                </div>
+                <div class="mt-10">
+
+                <button class="genric-btn primary circle" type="submit" name="button">Submit</button>
+              </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- End Align Area -->
+    <footer class="footer-area section-gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>About Us</h6>
+              <p>
+                Made with Dzul Fikri irsyad and copyright template from <a target="_blank" href="https://colorlib.com/">colorlib.com</a>
+              </p>
+              <p class="footer-text">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+      <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+        $.get("publisher.php?action=read",function(response){
+          $.each(response,function(key,value){
+            $('#publisher').append($('<option>', {value:value.pub_id, text:value.pub_name}));
+          });
+        });
+        var params = window.location.search.substr(1).split('&');
+        for(var i=0; i<params.length;i++){
+          params[i] = params[i].split('=');
+        }
+        if(params[0][0]=='action' && params[0][1]=="update"){
+          $.get("db.php?action=detail&title_id="+params[1][1],function(response){
+            console.log(response);
+            $("#title").val(response.title);
+            $("#type").val(response.type);
+            $("#sinopsis").val(response.sinopsis);
+            $("#image").attr("src",response.image);
+            $("#publisher").val(response.pub_id);
+            $("#price").val(response.price);
+            $("#relese").val(response.relese_date);
+            $("#title_id").val(response.title_id);
+
+          });
+        }
+        $("form").submit(function(event){
+          event.preventDefault();
+          var data = new FormData(this);
+          if(params[0][0]=="action" & params[0][1]=="update"){
+            $.ajax({
+              url : "db.php?action=update",
+              type: "POST",
+              data: data,
+              contentType: false,
+              cache: false,
+              processData: false,
+              success :function(response){
+                location.replace("index.html");
+              }
+            });
+          }else{
+            $.ajax({
+              url : "db.php?action=create",
+              type: "POST",
+              data: data,
+              contentType: false,
+              cache: false,
+              processData: false,
+              success :function(response){
+                location.replace("index.html");
+              }
+            });
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>
